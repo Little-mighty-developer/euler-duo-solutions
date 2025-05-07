@@ -58,7 +58,7 @@ mkmf.log
 *.swp
 *.swo
 .DS_Store
-
+.qlty*
 # Project specific
 *.log
 .env
