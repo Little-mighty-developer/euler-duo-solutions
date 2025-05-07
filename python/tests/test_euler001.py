@@ -1,5 +1,5 @@
 import pytest
-from python.solutions.euler001 import sum_multiples_of_3_and_5
+from euler001 import sum_multiples_of_3_and_5
 
 def test_sum_multiples_of_3_and_5():
     """Test the sum_multiples_of_3_and_5 function with various inputs."""
