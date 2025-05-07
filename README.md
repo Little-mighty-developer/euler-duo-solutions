@@ -10,6 +10,8 @@ This repository demonstrates how to transform simple algorithmic challenges into
 
 ![CI](https://github.com/Little-mighty-developer/euler-duo-solutions/actions/workflows/ci.yml/badge.svg)
 
+📊 **Code Quality**: This repo uses QLTy to monitor test coverage, maintainability, and code smells across all Python and Ruby codebases.
+
 [![Code Coverage](https://qlty.sh/badges/f731e74f-efe1-4175-bf11-c241b51ca9d3/test_coverage.svg)](https://qlty.sh/gh/Little-mighty-developer/projects/euler-duo-solutions)
 
 [![Maintainability](https://qlty.sh/badges/f731e74f-efe1-4175-bf11-c241b51ca9d3/maintainability.svg)](https://qlty.sh/gh/Little-mighty-developer/projects/euler-duo-solutions)
