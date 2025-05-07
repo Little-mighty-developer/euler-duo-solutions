@@ -22,7 +22,15 @@ jobs:
       - name: Run Python tests and generate lcov
         run: |
           coverage run -m pytest python/tests
-          coverage lcov -o reports/lcov.info
+          coverage lcov -o target/lcov.info
+      - uses: qltysh/qlty-action/coverage@v1
+        with:
+          token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
+          files: target/lcov.info
+      - name: Run Black (check only)
+        run: black --check .
+      - name: Run Flake8
+        run: flake8 .
 
   ruby-tests:
     runs-on: ubuntu-latest
@@ -40,3 +48,11 @@ jobs:
         run: |
           cd ruby
           bundle exec ruby tests/test_euler001.rb
+      - uses: qltysh/qlty-action/coverage@v1
+        with:
+          token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
+          files: target/lcov.info
+      - name: Run RuboCop
+        run: |
+          cd ruby
+          bundle exec rubocop
