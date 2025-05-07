@@ -8,3 +8,8 @@ if [ -n "$FILES" ]; then
     exit 1
   fi
 fi
+
+# Call pre-commit for other hooks
+if command -v pre-commit > /dev/null; then
+  pre-commit run --files $FILES
+fi
