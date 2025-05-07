@@ -33,7 +33,9 @@ jobs:
           ruby-version: '3.2'
       - name: Install dependencies
         run: |
-          bundle install || true # In case you don't have a Gemfile
+          cd ruby
+          bundle install
       - name: Run Ruby tests with coverage
         run: |
-          cd ruby && bundle exec ruby tests/test_euler001.rb
+          cd ruby
+          bundle exec ruby tests/test_euler001.rb
