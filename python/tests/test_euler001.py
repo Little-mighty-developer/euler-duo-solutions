@@ -1,5 +1,8 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from solutions.euler001 import sum_multiples_of_3_and_5
 import pytest
-from euler001 import sum_multiples_of_3_and_5
 
 def test_sum_multiples_of_3_and_5():
     """Test the sum_multiples_of_3_and_5 function with various inputs."""
