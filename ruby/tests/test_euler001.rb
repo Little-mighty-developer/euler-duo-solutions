@@ -17,11 +17,11 @@ class TestEuler001 < Minitest::Test
     assert_equal 0, sum_multiples_of_three_and_five(3)
     assert_equal 3, sum_multiples_of_three_and_five(4)
     assert_equal 8, sum_multiples_of_three_and_five(6)
-    assert_equal 233_168, sum_multiples_of_3_and_5(1000)
+    assert_equal 233_168, sum_multiples_of_three_and_five(1000)
   end
 
   def test_edge_cases
-    assert_equal 0, sum_multiples_of_3_and_5(0)
-    assert_raises(ArgumentError) { sum_multiples_of_3_and_5(-1) }
+    assert_equal 0, sum_multiples_of_three_and_five(0)
+    assert_raises(ArgumentError) { sum_multiples_of_three_and_five(-1) }
   end
 end
