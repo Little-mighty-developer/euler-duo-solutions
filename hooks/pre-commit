@@ -1,0 +1,15 @@
+#!/bin/sh
+FILES=$(git diff --staged --name-only --diff-filter=d | grep '.rb$')
+
+if [ -n "$FILES" ]; then
+  bundle exec rubocop $FILES
+  if [ $? -ne 0 ]; then
+    echo "RuboCop found style violations. Please fix them before committing."
+    exit 1
+  fi
+fi
+
+# Call pre-commit for other hooks
+if command -v pre-commit > /dev/null; then
+  pre-commit run --files $FILES
+fi

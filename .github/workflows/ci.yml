@@ -19,9 +19,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r python/requirements.txt
-      - name: Run Python tests
+      - name: Run Python tests with coverage
         run: |
-          python -m pytest python/
+          pytest --cov=python/solutions --cov-report=xml python/tests
 
   ruby-tests:
     runs-on: ubuntu-latest
@@ -33,7 +33,9 @@ jobs:
           ruby-version: '3.2'
       - name: Install dependencies
         run: |
-          bundle install || true # In case you don't have a Gemfile
-      - name: Run Ruby tests
+          cd ruby
+          bundle install
+      - name: Run Ruby tests with coverage
         run: |
-          ruby ruby/tests/test_euler001.rb
+          cd ruby
+          bundle exec ruby tests/test_euler001.rb
