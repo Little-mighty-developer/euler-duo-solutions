@@ -6,7 +6,7 @@ A daily practice repository that transforms Project Euler problem-solving into a
 
 This repository demonstrates how to transform simple algorithmic challenges into a full-fledged DevSecOps showcase. Each solution is built in under 15 minutes daily, focusing on both Python and Ruby implementations.
 
-## Build status
+## ⚓ Build status
 
 ![CI](https://github.com/Little-mighty-developer/euler-duo-solutions/actions/workflows/ci.yml/badge.svg)
 
