@@ -1,10 +1,7 @@
 # frozen_string_literal: true
 
 require 'simplecov'
-SimpleCov.start do
-  enable_coverage :branch
-  coverage_dir '../coverage' # Save coverage report at project root
-end
+SimpleCov.start
 
 require 'minitest/autorun'
 require_relative '../solutions/euler001'
