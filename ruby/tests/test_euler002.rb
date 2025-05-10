@@ -32,4 +32,4 @@ class TestEuler002 < Minitest::Test
     # Test with negative numbers (should handle gracefully)
     assert_raises(ArgumentError) { sum_even_fibonacci(-1) }
   end
-end 
+end

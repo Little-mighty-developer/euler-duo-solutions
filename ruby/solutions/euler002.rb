@@ -11,10 +11,11 @@
 def sum_even_fibonacci(limit)
   raise ArgumentError, 'Limit must be a non-negative integer' if limit.negative?
 
-  return 0 if limit <= 2  # Handle edge cases: 0, 1, 2
+  return 0 if limit <= 2 # Handle edge cases: 0, 1, 2
 
   # Initialize first two Fibonacci numbers
-  a, b = 1, 2
+  a = 1
+  b = 2
   total = 0
 
   while b < limit
@@ -31,4 +32,4 @@ if __FILE__ == $PROGRAM_NAME
   limit = 4_000_000
   result = sum_even_fibonacci(limit)
   puts "The sum of even Fibonacci numbers below #{limit} is: #{result}"
-end 
+end
