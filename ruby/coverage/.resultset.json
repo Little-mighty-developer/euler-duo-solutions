@@ -1,0 +1,44 @@
+{
+  "Minitest": {
+    "coverage": {
+      "/Users/mandyarthur/Documents/Projects/euler-duo-solutions/ruby/solutions/euler002.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          9,
+          null,
+          8,
+          null,
+          null,
+          5,
+          5,
+          null,
+          5,
+          null,
+          52,
+          null,
+          52,
+          null,
+          null,
+          5,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "timestamp": 1746881741
+  }
+}
