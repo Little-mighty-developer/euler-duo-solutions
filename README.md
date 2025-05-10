@@ -20,14 +20,12 @@ This repository demonstrates how to transform simple algorithmic challenges into
 
 ### Core Development
 
-
-- **Languages*: Python & Ruby
+- \*_Languages_: Python & Ruby
 - **Testing**:
   - Python: pytest
   - Ruby: RSpec/Minitest
 - **Containerization**: Docker
 - **API**: RESTful microservices
-
 
 ### DevOps &Security
 
@@ -51,7 +49,6 @@ This repository demonstrates how to transform simple algorithmic challenges into
 
 ## 🏗️ Architecture
 
-
 Each solution follows a microservices architecture:
 
 1. Algorithm implementation in Python/Ruby
@@ -60,7 +57,6 @@ Each solution follows a microservices architecture:
 4. Automated testing
 5. Security scanning
 6. Kubernetes deployment
-
 
 ## 🎓 Learning Outcomes
 
@@ -88,7 +84,6 @@ This project serves as a practical demonstration of:
 5. Expose via REST API
 6. Run security scans
 7. Deploy to Kubernetes
-
 
 ## 🛡️ Security First
 
