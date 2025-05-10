@@ -19,15 +19,17 @@ This repository demonstrates how to transform simple algorithmic challenges into
 ## 🛠️ Technical Stack
 
 ### Core Development
-- **Languages**: Python & Ruby
-- **Testing**: 
+
+- \*_Languages_: Python & Ruby
+- **Testing**:
   - Python: pytest
   - Ruby: RSpec/Minitest
 - **Containerization**: Docker
 - **API**: RESTful microservices
 
-### DevOps & Security
-- **CI/CD**: 
+### DevOps &Security
+
+- **CI/CD**:
   - GitHub Actions
   - Jenkins
 - **Container Orchestration**: Kubernetes
@@ -48,6 +50,7 @@ This repository demonstrates how to transform simple algorithmic challenges into
 ## 🏗️ Architecture
 
 Each solution follows a microservices architecture:
+
 1. Algorithm implementation in Python/Ruby
 2. Docker containerization
 3. REST API exposure
@@ -58,6 +61,7 @@ Each solution follows a microservices architecture:
 ## 🎓 Learning Outcomes
 
 This project serves as a practical demonstration of:
+
 - Modern software development practices
 - DevOps automation
 - Security integration
@@ -84,6 +88,7 @@ This project serves as a practical demonstration of:
 ## 🛡️ Security First
 
 Every solution undergoes:
+
 - Static code analysis
 - Dependency vulnerability scanning
 - Docker image security checks
@@ -98,4 +103,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
-*Built with ❤️ for DevSecOps enthusiasts*
+
+_Built with ❤️ for DevSecOps enthusiasts_
