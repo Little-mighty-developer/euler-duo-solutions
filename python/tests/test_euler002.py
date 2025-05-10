@@ -12,10 +12,12 @@ from solutions.euler002 import sum_even_fibonacci  # noqa: E402
 class TestEuler002(unittest.TestCase):
     def test_sum_even_fibonacci(self):
         """Test the sum_even_fibonacci function with various inputs."""
-        # Test with small numbers
-        self.assertEqual(sum_even_fibonacci(10), 10)  # 2 + 8 = 10
-        self.assertEqual(sum_even_fibonacci(20), 10)  # 2 + 8 = 10
-        self.assertEqual(sum_even_fibonacci(50), 44)  # 2 + 8 + 34 = 44
+        # 2 + 8 = 10 for n=10
+        self.assertEqual(sum_even_fibonacci(10), 10)
+        # 2 + 8 = 10 for n=20
+        self.assertEqual(sum_even_fibonacci(20), 10)
+        # 2 + 8 + 34 = 44 for n=50
+        self.assertEqual(sum_even_fibonacci(50), 44)
 
         # Test with the actual problem limit
         self.assertEqual(sum_even_fibonacci(4_000_000), 4613732)
