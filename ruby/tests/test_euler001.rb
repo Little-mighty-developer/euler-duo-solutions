@@ -22,3 +22,4 @@ class TestEuler001 < Minitest::Test
     assert_raises(ArgumentError) { sum_multiples_of_three_and_five(-1) }
   end
 end
+ 
