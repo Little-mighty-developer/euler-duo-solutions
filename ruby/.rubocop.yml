@@ -1,0 +1,10 @@
+AllCops:
+  SuggestExtensions: false
+
+Metrics/MethodLength:
+  Exclude:
+    - "solutions/euler003.rb"
+  Max: 15
+
+Naming/MethodParameterName:
+  MinNameLength: 2
