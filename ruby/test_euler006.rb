@@ -1,6 +1,9 @@
+# frozen_string_literal: true
+
 require 'test/unit'
 require_relative '../euler006'
 
+# Test cases for Project Euler Problem 6: Sum Square Difference
 class TestEuler006 < Test::Unit::TestCase
   def test_sum_square_difference
     # Test case from problem description
@@ -21,4 +24,4 @@ class TestEuler006 < Test::Unit::TestCase
     # Test with n = 5
     assert_equal(170, sum_square_difference(5))
   end
-end 
+end
